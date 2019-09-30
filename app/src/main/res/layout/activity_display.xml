@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Display">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical"
+        android:padding="20sp"
+        android:scaleType="centerInside"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp">
+
+
+        <TextView
+            android:id="@+id/TextViewTimeDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Time"
+
+            android:textSize="15sp"
+
+
+            android:layout_below="@+id/TextViewTitle"
+            android:scaleType="centerInside"
+
+
+            >
+
+        </TextView>
+
+
+    <TextView
+        android:id="@+id/TextViewTitleDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/sriracharegular"
+        android:scaleType="centerInside"
+        android:textIsSelectable="true"
+
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/TextViewDescriptionDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:layout_below="@+id/TextViewTime"
+        android:fontFamily="@font/sriracharegular"
+        android:textIsSelectable="true"
+
+        android:scaleType="centerInside"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+
+        >
+
+    </TextView>
+
+        <ImageView
+
+            android:id="@+id/imageviewdisplay"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:scaleType="fitXY"
+
+            >
+
+        </ImageView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>

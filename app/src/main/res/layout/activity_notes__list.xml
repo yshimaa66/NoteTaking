@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Notes_List">
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:layout_marginTop="20sp"
+        tools:ignore="MissingConstraints">
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16sp"
+                >
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Title"
+            android:fontFamily="@font/sriracharegular"
+            android:textStyle="bold"
+            android:textSize="30sp"
+
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:textAlignment="center"
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Time"
+
+            android:textSize="15sp"
+
+
+            android:layout_below="@+id/TextViewTitle"
+            android:scaleType="centerInside"
+
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Description"
+            android:fontFamily="@font/sriracharegular"
+            android:layout_below="@+id/TextViewTime"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:maxLines="1"
+
+            android:scaleType="centerInside"
+
+
+            >
+
+        </TextView>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="200sp"
+                    android:layout_marginEnd="5sp"
+
+                    android:background="@null"
+                    android:orientation="horizontal"
+
+                    android:padding="10sp"
+                    android:scaleType="centerInside"
+                    tools:ignore="MissingConstraints">
+
+                    <Button
+
+                        android:id="@+id/Deletebtn"
+
+
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginTop="35sp"
+                        android:background="@drawable/ic_action_delete"
+                        app:backgroundTint="#940505"
+                        app:rippleColor="#DD1111"
+
+                        >
+
+                    </Button>
+
+                    <Button
+
+                        android:id="@+id/Updatebtn"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginTop="35sp"
+                        android:background="@drawable/ic_action_edit"
+                        app:backgroundTint="#940505"
+                        app:rippleColor="#DD1111"
+
+                        >
+
+                    </Button>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <ImageView
+
+                    android:id="@+id/imageviewmain"
+
+
+                    android:layout_below="@+id/TextViewDescription"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_marginTop="10sp">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

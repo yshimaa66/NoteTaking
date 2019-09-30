@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical"
+        android:padding="20sp"
+        android:scaleType="centerInside"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <Button
+
+            android:id="@+id/updateNote"
+            android:layout_marginStart="250sp"
+            android:layout_marginEnd="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_save"
+
+            app:backgroundTint="#940505"
+            app:rippleColor="#DD1111"
+            >
+
+        </Button>
+
+
+        <EditText
+            android:id="@+id/EditTextTitleUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginTop="30sp"
+            android:hint="@string/Title"
+            android:scaleType="centerInside"
+            android:fontFamily="@font/sriracharegular"
+
+
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            >
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/EditTextDescriptionUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="50sp"
+            android:layout_below="@+id/TextViewTime"
+            android:hint="@string/Description"
+            android:maxLines="8"
+
+            android:fontFamily="@font/sriracharegular"
+            android:scaleType="centerInside"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+
+            >
+
+        </EditText>
+
+        <Button
+
+            android:id="@+id/deletecameraiconupdate"
+
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="280sp"
+            android:layout_marginEnd="5sp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/ic_action_deletecamera"
+
+
+            app:backgroundTint="#940505"
+            app:rippleColor="#DD1111"
+            >
+
+        </Button>
+
+        <ImageView
+
+            android:id="@+id/imageviewupdate"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:scaleType="fitXY"
+
+            >
+
+        </ImageView>
+
+
+        <Button
+
+            android:id="@+id/cameraiconupdate"
+
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_camera"
+
+
+            app:backgroundTint="#940505"
+            app:rippleColor="#DD1111"
+            >
+
+        </Button>
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</ScrollView>

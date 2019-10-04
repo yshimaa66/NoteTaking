@@ -147,6 +147,9 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 .getActionView();
         searchView.setSearchableInfo(searchManager
                 .getSearchableInfo(getComponentName()));
+        searchView.setOnQueryTextListener(this);
+
+
 
 
 
@@ -201,7 +204,6 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     public boolean onQueryTextChange(String newText) {
 
-        Toast.makeText(MainActivity.this,"dddddddddddddddddd", Toast.LENGTH_SHORT).show();
 
         newText= newText.toLowerCase();
         List<Notes_List> newList= new ArrayList<>();
